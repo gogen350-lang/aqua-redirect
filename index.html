@@ -27,7 +27,8 @@
             
             // Формируем правильный диплинк
             if (app === 'happ') {
-                finalUrl = 'happ://install-sub?url=' + encodeURIComponent(link);
+                // ИСПРАВЛЕННАЯ СТРОКА ДЛЯ HAPP:
+                finalUrl = 'happ://add/' + link;
             } else if (app === 'hiddify') {
                 finalUrl = 'hiddify://install-config?url=' + encodeURIComponent(link);
             } else if (app === 'v2ray') {
